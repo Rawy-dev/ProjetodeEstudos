@@ -1,140 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Organização dos Estudos</title>
-</head>
-<body>
-    <header>
-        <div class="titulo">
-            <h1>Organização dos Estudos</h1>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caderno de Estudos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="brand-mark">C</div>
+          <div class="brand-text">
+            <span class="brand-name">Caderno</span>
+            <span class="brand-tag">estudos</span>
+          </div>
         </div>
-        <div class="menu">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
+
+        <nav class="main-nav" aria-label="Navegação principal">
+          <a href="#">Início</a>
+          <a href="#">Disciplinas</a>
+          <a href="#">Conteúdos</a>
+          <a href="#">Cronograma</a>
+          <a href="#">Dicas</a>
+          <a href="#">Contato</a>
+        </nav>
+      </header>
+
+      <main class="content">
+        <section class="hero-card">
+          <div class="hero-copy">
+            <p class="eyebrow">ORGANIZE A SEMANA</p>
+            <h1>Seus estudos, num caderno bem dividido.</h1>
+            <p class="subtitle">
+              Disciplinas com identidade, conteúdos em cards e um cronograma que cabe na sua rotina.
+              Calmo, leve e só do que você precisa.
+            </p>
+
+            <div class="hero-actions">
+              <button class="primary-btn">Montar minha semana</button>
+              <button class="secondary-btn">Ver disciplinas</button>
+            </div>
+
+            <div class="color-dots" aria-label="Cores de disciplinas">
+              <span class="dot teal"></span>
+              <span class="dot dark-teal"></span>
+              <span class="dot orange"></span>
+              <span class="dot yellow"></span>
+            </div>
+          </div>
+
+          <aside class="mini-panel">
+            <h2>ATALHOS RÁPIDOS</h2>
+            <div class="shortcut-grid">
+              <div class="shortcut-item">
+                <span>Minha semana</span>
+                <small>cronograma</small>
+              </div>
+              <div class="shortcut-item">
+                <span>Revisões</span>
+                <small>3 pendientes</small>
+              </div>
+              <div class="shortcut-item">
+                <span>Conteúdos</span>
+                <small>abertos</small>
+              </div>
+              <div class="shortcut-item">
+                <span>Dicas</span>
+                <small>nova etapa</small>
+              </div>
+            </div>
+
+            <div class="note-box">
+              Hoje: revisar funções e fazer 20 questões de geometria.
+            </div>
+          </aside>
+        </section>
+
+        <section class="hero-image" aria-label="Caderno de estudos em mesa">
+          <div class="notebook-scene"></div>
+        </section>
+
+        <section class="disciplinas-section">
+          <div class="section-head">
+            <div>
+              <h3>Disciplinas</h3>
+              <p>Cada matéria tem sua própria cor de abe.</p>
+            </div>
+            <a href="#">Ver todas</a>
+          </div>
+
+          <div class="disciplinas-grid">
+            <article class="discipline-card card-teal">
+              <h4>Matemática</h4>
+              <p>Funções e polígonos</p>
+              <span>8 conteúdos</span>
+            </article>
+
+            <article class="discipline-card card-green">
+              <h4>Química</h4>
+              <p>Equilíbrio e soluções</p>
+              <span>6 conteúdos</span>
+            </article>
+
+            <article class="discipline-card card-sand">
+              <h4>Geografia</h4>
+              <p>Climas e relevo</p>
+              <span>5 conteúdos</span>
+            </article>
+
+            <article class="discipline-card card-orange">
+              <h4>História</h4>
+              <p>Brasil colonial</p>
+              <span>7 conteúdos</span>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="bottom-bar">
+        <div class="brand-wrap small-brand">
+          <div class="brand-mark">C</div>
+          <div class="brand-text">
+            <span class="brand-name">Caderno</span>
+            <span class="brand-tag">estudos</span>
+          </div>
         </div>
-    </header>
-    <div class="conteudo-wrapper">
-        <section class="conteudo">
-            <h2>Bem-vindo ao nosso site!</h2>
-            <p>Este site é dedicado a ajudar estudantes a organizar seus estudos de forma eficiente. Aqui você encontrará dicas, ferramentas e recursos para melhorar sua produtividade e alcançar seus objetivos acadêmicos.</p>
-            <p>Explore nossas seções para descobrir mais sobre como otimizar seu tempo de estudo, criar um plano de estudos eficaz e manter-se motivado ao longo do caminho.</p>
-        </section>
+
+        <nav class="footer-nav" aria-label="Menu do rodapé">
+          <a href="#">Início</a>
+          <a href="#">Disciplinas</a>
+          <a href="#">Conteúdos</a>
+          <a href="#">Cronograma</a>
+          <a href="#">Dicas</a>
+          <a href="#">Contato</a>
+        </nav>
+      </footer>
     </div>
-
-    <div class="disciplinas-wrapper">
-        <section class="disciplinas">
-            <h2>Disciplinas</h2>
-            <ul>
-                <li><a href="matematica.html">Matemática</a></li>
-                <li><a href="portugues.html">Português</a></li>
-                <li><a href="ciencias.html">Ciências</a></li>
-                <li><a href="historia.html">História</a></li>
-                <li><a href="geografia.html">Geografia</a></li>
-            </ul>
-        </section>
-    </div>
-
-    <div class="lista-conteudos-wrapper">
-        <section class="lista-conteudos">
-            <h2>Lista de Conteúdos</h2>
-            <ul>
-                <li><a href="conteudo1.html">Conteúdo 1</a></li>
-                <li><a href="conteudo2.html">Conteúdo 2</a></li>
-                <li><a href="conteudo3.html">Conteúdo 3</a></li>
-                <li><a href="conteudo4.html">Conteúdo 4</a></li>
-                <li><a href="conteudo5.html">Conteúdo 5</a></li>
-            </ul>
-        </section>
-    </div>
-
-    <div class="Cronograma-semanal">
-        <section class="cronograma">
-            <h2>Cronograma Semanal</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Dia</th>
-                        <th>Atividade</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Segunda-feira</td>
-                        <td>Estudo de Matemática</td>
-                    </tr>
-                    <tr>
-                        <td>Terça-feira</td>
-                        <td>Leitura de Português</td>
-                    </tr>
-                    <tr>
-                        <td>Quarta-feira</td>
-                        <td>Experimentos de Ciências</td>
-                    </tr>
-                    <tr>
-                        <td>Quinta-feira</td>
-                        <td>Revisão de História</td>
-                    </tr>
-                    <tr>
-                        <td>Sexta-feira</td>
-                        <td>Prática de Geografia</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-    </div>
-
-    <div class="dicas-wrapper">
-        <section class="dicas">
-            <h2>Dicas de Estudo</h2>
-            <ul>
-                <li>Crie um ambiente de estudo livre de distrações.</li>
-                <li>Estabeleça metas claras e alcançáveis para cada sessão de estudo.</li>
-                <li>Faça pausas regulares para evitar a fadiga mental.</li>
-                <li>Utilize técnicas de memorização, como mapas mentais e flashcards.</li>
-                <li>Revise o conteúdo regularmente para reforçar o aprendizado.</li>
-            </ul>
-        </section>
-
-    </div>
-
-    <div class="secao-contato">
-        <section class="contato">
-            <h2>Contato</h2>
-            <p>Se você tiver alguma dúvida ou sugestão, entre em contato conosco através do formulário abaixo:</p>
-            <form action="enviar_contato.php" method="post">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </div>
-
-    
-
-
-
-
-
-
-
-    <footer>
-        <p>&copy; 2024 Organização dos Estudos. Todos os direitos reservados.</p>
-    </footer>
-    
-</body>
+  </body>
 </html>
