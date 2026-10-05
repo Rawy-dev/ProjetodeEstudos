@@ -1,0 +1,131 @@
+.discipline-page .page-shell {
+  width: min(1170px, calc(100% - 32px));
+}
+
+.disciplinas-content {
+  margin-top: 26px;
+  padding: 24px 4px 0;
+}
+
+.page-header {
+  margin-bottom: 18px;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 4vw, 3.8rem);
+  line-height: 1;
+  letter-spacing: -0.06em;
+  color: #2d3942;
+}
+
+.page-subtitle {
+  margin-top: 10px;
+  color: #6a787d;
+  font-size: 1.02rem;
+}
+
+.discipline-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  gap: 22px;
+  margin-top: 18px;
+}
+
+.discipline-card {
+  position: relative;
+  border: 1px solid rgba(99, 118, 129, 0.18);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.45);
+  padding: 0 0 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 18px rgba(67, 78, 84, 0.04);
+}
+
+.discipline-card::before {
+  content: "";
+  display: block;
+  height: 6px;
+  width: 100%;
+  background: var(--card-accent, #4d8798);
+}
+
+.discipline-card h2 {
+  margin: 18px 18px 8px;
+  font-size: clamp(1.2rem, 2vw, 1.7rem);
+  letter-spacing: -0.04em;
+  color: #2d3942;
+}
+
+.discipline-card p {
+  margin: 0 18px;
+  color: rgba(52, 64, 71, 0.74);
+  min-height: 44px;
+}
+
+.discipline-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin: 16px 18px 0;
+  padding-top: 10px;
+  border-top: 1px solid rgba(101, 117, 124, 0.08);
+}
+
+.discipline-meta span {
+  font-size: 0.78rem;
+  color: rgba(65, 75, 82, 0.8);
+}
+
+.discipline-meta a {
+  color: #2d6778;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.card-teal {
+  --card-accent: var(--teal);
+}
+
+.card-green {
+  --card-accent: var(--green);
+}
+
+.card-sand {
+  --card-accent: #d4a76b;
+}
+
+.card-orange {
+  --card-accent: var(--orange);
+}
+
+.card-teal-soft {
+  --card-accent: #6fa0b7;
+}
+
+.card-green-soft {
+  --card-accent: #7bb49d;
+}
+
+.link-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+@media (max-width: 760px) {
+  .discipline-list {
+    grid-template-columns: 1fr;
+  }
+
+  .disciplinas-content {
+    padding-top: 12px;
+  }
+
+  .page-header h1 {
+    font-size: 2.5rem;
+  }
+}
