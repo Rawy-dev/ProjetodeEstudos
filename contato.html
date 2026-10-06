@@ -5,57 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contato | Caderno de Estudos</title>
     <link rel="stylesheet" href="src/style.css" />
-    <style>
-      body {
-        margin: 0;
-      }
-      .simple-page {
-        width: min(960px, calc(100% - 30px));
-        margin: 26px auto 40px;
-      }
-      .simple-card {
-        background: rgba(255,255,255,0.45);
-        border: 1px solid rgba(100,117,124,0.15);
-        border-radius: 20px;
-        padding: 28px 24px;
-        box-shadow: 0 12px 24px rgba(53,63,70,0.04);
-      }
-      .simple-page h1 {
-        margin: 0 0 10px;
-        font-size: clamp(2.1rem, 4vw, 3.5rem);
-        letter-spacing: -0.06em;
-        color: #2d3942;
-      }
-      .simple-page p {
-        color: #5e6c73;
-        line-height: 1.7;
-      }
-      form {
-        display: grid;
-        gap: 12px;
-        margin-top: 18px;
-      }
-      input, textarea {
-        width: 100%;
-        padding: 12px 14px;
-        border-radius: 12px;
-        border: 1px solid rgba(112,129,138,0.2);
-        background: rgba(255,255,255,0.34);
-        font: inherit;
-      }
-      button {
-        border: none;
-        border-radius: 12px;
-        background: linear-gradient(135deg, #2b7689, #205d73);
-        color: white;
-        padding: 12px 18px;
-        font-weight: 700;
-        cursor: pointer;
-      }
-    </style>
+    <link rel="stylesheet" href="src/contato.css" />
   </head>
   <body>
-    <div class="page-shell simple-page">
+    <div class="page-shell contact-page">
       <header class="topbar">
         <div class="brand-wrap">
           <div class="brand-mark">C</div>
@@ -64,28 +17,85 @@
             <span class="brand-tag">estudos</span>
           </div>
         </div>
+
         <nav class="main-nav" aria-label="Navegação principal">
-          <a href="index.html">Início</a>
+          <a href="index.html">Inicio</a>
+          <a href="disciplinas.html">Disciplinas</a>
+          <a href="conteudos.html">Conteúdos</a>
+          <a href="cronograma.html">Cronograma</a>
+          <a href="dicas.html">Dicas</a>
+        </nav>
+
+        <a href="contato.html" class="nav-cta">Contato</a>
+      </header>
+
+      <main class="contact-content">
+        <p class="eyebrow">FALE COM A GENTE</p>
+        <h1>Contato</h1>
+        <p class="lead">
+          Dúvidas sobre o cronograma ou sugestão de matéria nova? Escreva que
+          responderemos em breve.
+        </p>
+
+        <div class="contact-grid">
+          <section class="form-panel" aria-label="Formulário de contato">
+            <h2>Mande sua mensagem</h2>
+
+            <form class="contact-form">
+              <div class="field-group">
+                <label for="nome">Nome</label>
+                <input id="nome" type="text" placeholder="Seu nome" />
+              </div>
+
+              <div class="field-group">
+                <label for="email">E-mail</label>
+                <input id="email" type="email" placeholder="você@exemplo.com" />
+              </div>
+
+              <div class="field-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" rows="5" placeholder="Como podemos ajudar?"></textarea>
+              </div>
+
+              <button class="submit-btn" type="submit">Enviar mensagem</button>
+            </form>
+          </section>
+
+          <aside class="info-panel" aria-label="Informações de contato">
+            <h3>Informações</h3>
+
+            <ul class="info-list">
+              <li>atendimento@caderno.estudos</li>
+              <li>Segunda a sexta, das 9h às 18h</li>
+              <li>Gratuito para alunos em organização de estudos</li>
+            </ul>
+
+            <div class="note">
+              Dica: marque suas abas favoritas e elas aparecerão no topo do
+              cronograma.
+            </div>
+          </aside>
+        </div>
+      </main>
+
+      <footer class="bottom-bar">
+        <div class="brand-wrap small-brand">
+          <div class="brand-mark">C</div>
+          <div class="brand-text">
+            <span class="brand-name">Caderno</span>
+            <span class="brand-tag">estudos</span>
+          </div>
+        </div>
+
+        <nav class="footer-nav" aria-label="Menu do rodapé">
+          <a href="index.html">Inicio</a>
           <a href="disciplinas.html">Disciplinas</a>
           <a href="conteudos.html">Conteúdos</a>
           <a href="cronograma.html">Cronograma</a>
           <a href="dicas.html">Dicas</a>
           <a href="contato.html">Contato</a>
         </nav>
-      </header>
-
-      <main class="simple-card">
-        <p class="eyebrow">CONTATO</p>
-        <h1>Entre em contato</h1>
-        <p>Se quiser sugerir novas matérias, melhorias ou compartilhar uma boa ideia para o caderno, escreva abaixo.</p>
-
-        <form>
-          <input type="text" placeholder="Seu nome" aria-label="Seu nome" />
-          <input type="email" placeholder="Seu e-mail" aria-label="Seu e-mail" />
-          <textarea rows="5" placeholder="Sua mensagem" aria-label="Sua mensagem"></textarea>
-          <button type="submit">Enviar</button>
-        </form>
-      </main>
+      </footer>
     </div>
   </body>
 </html>
