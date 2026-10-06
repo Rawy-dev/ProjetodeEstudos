@@ -1,0 +1,197 @@
+:root {
+  --bg: #dfe7eb;
+  --panel: rgba(255, 255, 255, 0.72);
+  --panel-strong: #edf3f5;
+  --border: rgba(79, 99, 110, 0.2);
+  --text: #2f3b44;
+  --muted: #66757c;
+  --teal: #1f7585;
+  --teal-dark: #0f5968;
+  --green: #4da799;
+  --orange: #d89253;
+  --yellow: #f0d56d;
+  --shadow: rgba(51, 71, 79, 0.08);
+  --note: #f4e7b4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(180deg, #e7eef1 0%, #dfe7eb 100%);
+  color: var(--text);
+}
+
+button,
+a,
+input,
+textarea {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.page-shell {
+  width: min(1200px, calc(100% - 32px));
+  margin: 22px auto 0;
+}
+
+.topbar,
+.bottom-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.38);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 16px 20px;
+  box-shadow: 0 8px 18px rgba(44, 55, 62, 0.04);
+}
+
+.brand-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-mark {
+  width: 22px;
+  height: 22px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #b7d5de 0%, #6ca8ba 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.8rem;
+  display: grid;
+  place-items: center;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+}
+
+.brand-text {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  line-height: 1;
+}
+
+.brand-name,
+.brand-tag {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.brand-tag {
+  font-weight: 500;
+  color: #6d7a81;
+}
+
+.main-nav,
+.footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.main-nav a,
+.footer-nav a {
+  color: rgba(40, 49, 57, 0.84);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: opacity 0.2s ease;
+}
+
+.main-nav a:hover,
+.footer-nav a:hover {
+  opacity: 0.7;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: #6d7a81;
+  font-size: 0.76rem;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+}
+
+.page-header {
+  margin-bottom: 18px;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: clamp(2.4rem, 4vw, 4rem);
+  line-height: 0.96;
+  letter-spacing: -0.06em;
+  color: #2d3840;
+}
+
+.page-subtitle {
+  margin-top: 10px;
+  color: rgba(50, 61, 70, 0.82);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.bottom-bar {
+  margin: 18px 0 40px;
+  padding: 16px 26px;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.small-brand {
+  margin-right: auto;
+}
+
+@media (max-width: 760px) {
+  .page-shell {
+    width: min(100% - 18px, 1200px);
+    margin-top: 12px;
+  }
+
+  .topbar,
+  .bottom-bar {
+    border-radius: 18px;
+    padding: 14px 16px;
+  }
+
+  .topbar,
+  .bottom-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main-nav,
+  .footer-nav {
+    justify-content: flex-start;
+    gap: 10px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-text {
+    gap: 3px;
+  }
+
+  .brand-name,
+  .brand-tag {
+    font-size: 0.9rem;
+  }
+
+  .main-nav a,
+  .footer-nav a {
+    font-size: 0.82rem;
+  }
+}
