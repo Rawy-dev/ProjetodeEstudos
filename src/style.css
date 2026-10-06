@@ -185,6 +185,13 @@ a {
   border: 1px solid rgba(83, 102, 112, 0.18);
 }
 
+.link-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
 .primary-btn:hover,
 .secondary-btn:hover {
   transform: translateY(-1px);
