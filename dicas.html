@@ -5,50 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dicas | Caderno de Estudos</title>
     <link rel="stylesheet" href="src/style.css" />
-    <style>
-      body {
-        margin: 0;
-      }
-      .simple-page {
-        width: min(960px, calc(100% - 30px));
-        margin: 26px auto 40px;
-      }
-      .simple-card {
-        background: rgba(255,255,255,0.45);
-        border: 1px solid rgba(100,117,124,0.15);
-        border-radius: 20px;
-        padding: 28px 24px;
-        box-shadow: 0 12px 24px rgba(53,63,70,0.04);
-      }
-      .simple-page h1 {
-        margin: 0 0 10px;
-        font-size: clamp(2.1rem, 4vw, 3.5rem);
-        letter-spacing: -0.06em;
-        color: #2d3942;
-      }
-      .simple-page p {
-        color: #5e6c73;
-        line-height: 1.7;
-      }
-      .tips-list {
-        display: grid;
-        gap: 14px;
-        margin-top: 20px;
-      }
-      .tip {
-        background: rgba(255,255,255,0.26);
-        border: 1px solid rgba(110,128,137,0.14);
-        border-radius: 14px;
-        padding: 14px 16px;
-        color: #394950;
-      }
-      .tip strong {
-        color: #1d6676;
-      }
-    </style>
+    <link rel="stylesheet" href="src/dicas.css" />
   </head>
   <body>
-    <div class="page-shell simple-page">
+    <div class="page-shell tips-page">
       <header class="topbar">
         <div class="brand-wrap">
           <div class="brand-mark">C</div>
@@ -57,6 +17,7 @@
             <span class="brand-tag">estudos</span>
           </div>
         </div>
+
         <nav class="main-nav" aria-label="Navegação principal">
           <a href="index.html">Início</a>
           <a href="disciplinas.html">Disciplinas</a>
@@ -67,18 +28,68 @@
         </nav>
       </header>
 
-      <main class="simple-card">
+      <main class="tips-main">
         <p class="eyebrow">DICAS</p>
         <h1>Dicas de estudo</h1>
-        <p>Pequenos hábitos fazem muita diferença quando o objetivo é manter a rotina consistente e eficiente.</p>
+        <p class="tips-subtitle">Pequenos hábitos que mudam o resultado da semana. Leia um por dia.</p>
 
-        <div class="tips-list">
-          <div class="tip"><strong>1.</strong> Estabeleça um tempo fixo para estudar e mantenha esse horário sempre.</div>
-          <div class="tip"><strong>2.</strong> Divida o conteúdo em blocos pequenos para facilitar a revisão e a retenção.</div>
-          <div class="tip"><strong>3.</strong> Faça pausas curtas entre as sessões para manter foco e evitar cansaço.</div>
-          <div class="tip"><strong>4.</strong> Revise o material no mesmo dia para consolidar o aprendizado.</div>
-        </div>
+        <section class="tips-grid" aria-label="Dicas de estudo">
+          <article class="tip-card focus">
+            <p class="tip-label">FOCO</p>
+            <h2>Blocos de 25 minutos</h2>
+            <p>Estude em intervalos curtos com pausas reais. Menos cansaço, mais retenção.</p>
+          </article>
+
+          <article class="tip-card memory">
+            <p class="tip-label">MEMÓRIA</p>
+            <h2>Repita no mesmo dia</h2>
+            <p>Revise o conteúdo antes de dormir e durante a sequência para fixar melhor.</p>
+          </article>
+
+          <article class="tip-card routine">
+            <p class="tip-label">ROTINA</p>
+            <h2>Uma matéria por bloco</h2>
+            <p>Evite misturar assuntos. Foque em uma área por vez para manter o ritmo.</p>
+          </article>
+
+          <article class="tip-card practice">
+            <p class="tip-label">PRÁTICA</p>
+            <h2>Resolva antes de reler</h2>
+            <p>Tente responder sozinho primeiro; só depois confira o material e as respostas.</p>
+          </article>
+
+          <article class="tip-card environment">
+            <p class="tip-label">AMBIENTE</p>
+            <h2>Meia lamp, mente limpa</h2>
+            <p>Deixe o espaço organizado e sem distrações visuais para facilitar a concentração.</p>
+          </article>
+
+          <article class="tip-card rest">
+            <p class="tip-label">DESCANSO</p>
+            <h2>Durma antes da prova</h2>
+            <p>O descanso é parte do estudo. Dormir bem melhora atenção e raciocínio.</p>
+          </article>
+        </section>
       </main>
+
+      <footer class="bottom-bar">
+        <div class="brand-wrap small-brand">
+          <div class="brand-mark">C</div>
+          <div class="brand-text">
+            <span class="brand-name">Caderno</span>
+            <span class="brand-tag">estudos</span>
+          </div>
+        </div>
+
+        <nav class="footer-nav" aria-label="Menu do rodapé">
+          <a href="index.html">Início</a>
+          <a href="disciplinas.html">Disciplinas</a>
+          <a href="conteudos.html">Conteúdos</a>
+          <a href="cronograma.html">Cronograma</a>
+          <a href="dicas.html">Dicas</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+      </footer>
     </div>
   </body>
 </html>
